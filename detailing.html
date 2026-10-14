@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Car Detailing London | Professional Ceramic Coating</title>
+    <meta name="description" content="Premium mobile car detailing and ceramic coating in London. Restore your vehicle's shine with our expert paint correction services. Get a free quote today!">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1A1A1A;
+            --secondary: #D4AF37;
+            --accent: #333333;
+            --text-light: #EEEEEE;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-light); background: var(--primary); scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--white); }
+        a { text-decoration: none; transition: var(--transition); }
+        ul { list-style: none; }
+
+        /* Sticky Header */
+        header {
+            position: sticky; top: 0; z-index: 1000;
+            background: rgba(26, 26, 26, 0.95); backdrop-filter: blur(10px);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; border-bottom: 1px solid var(--accent);
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--secondary); text-transform: uppercase; letter-spacing: 1px; }
+        .header-contact { display: flex; align-items: center; gap: 20px; }
+        .phone-link { font-weight: 600; color: var(--white); font-size: 1.1rem; }
+        .btn {
+            padding: 12px 24px; border-radius: 2px; font-weight: 600; cursor: pointer;
+            display: inline-block; border: none; transition: var(--transition);
+            text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;
+        }
+        .btn-primary { background: var(--secondary); color: var(--primary); }
+        .btn-primary:hover { background: #B8962E; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(212,175,55,0.4); }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 5% 80px; text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080?text=Luxury+Car+Detailing+London') center/cover;
+            color: var(--white);
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.1; }
+        .hero p { font-size: 1.2rem; margin-bottom: 35px; max-width: 800px; margin-left: auto; margin-right: auto; opacity: 0.9; }
+        .hero-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .btn-outline { border: 2px solid var(--secondary); color: var(--secondary); }
+        .btn-outline:hover { background: var(--secondary); color: var(--primary); }
+        .trust-badges { margin-top: 50px; display: flex; justify-content: center; gap: 30px; font-size: 0.9rem; font-weight: 600; color: var(--secondary); }
+
+        /* Social Proof Strip */
+        .proof-strip { background: var(--accent); color: var(--white); padding: 15px 5%; text-align: center; font-weight: 600; border-bottom: 2px solid var(--secondary); }
+
+        /* Services Section */
+        .section { padding: 100px 5%; }
+        .section-title { text-align: center; margin-bottom: 60px; font-size: 2.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { padding: 40px; background: var(--accent); border: 1px solid #444; border-radius: 4px; transition: var(--transition); text-align: center; }
+        .card:hover { border-color: var(--secondary); transform: translateY(-10px); }
+        .card h3 { margin-bottom: 20px; color: var(--secondary); font-size: 1.5rem; }
+        .card p { color: #ccc; }
+
+        /* Why Choose Us */
+        .why-us { background: #111; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
+        .why-item { display: flex; gap: 20px; align-items: flex-start; }
+        .why-item span { font-size: 2rem; color: var(--secondary); }
+        .why-item strong { display: block; font-size: 1.2rem; margin-bottom: 10px; color: var(--white); }
+
+        /* Process */
+        .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center; }
+        .process-step { position: relative; }
+        .step-num {
+            width: 60px; height: 60px; background: var(--secondary); color: var(--primary);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 25px; font-weight: 700; font-size: 1.5rem;
+        }
+
+        /* Reviews */
+        .review-card { background: var(--accent); padding: 40px; border-radius: 4px; border-left: 4px solid var(--secondary); font-style: italic; }
+        .review-author { margin-top: 25px; font-weight: 600; font-style: normal; display: block; color: var(--secondary); }
+
+        /* FAQ */
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        details { margin-bottom: 15px; padding: 20px; background: var(--accent); border: 1px solid #444; border-radius: 4px; cursor: pointer; }
+        summary { font-weight: 600; font-size: 1.1rem; outline: none; color: var(--white); }
+        details p { margin-top: 15px; padding-left: 20px; color: #bbb; }
+
+        /* Lead Form Section */
+        .cta-final { background: #111; text-align: center; }
+        .form-container { max-width: 650px; margin: 50px auto 0; background: var(--accent); padding: 50px; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .form-group { margin-bottom: 25px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--secondary); }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 15px; background: var(--primary); border: 1px solid #555; border-radius: 2px; color: var(--white); font-family: inherit;
+        }
+        .form-group input:focus { border-color: var(--secondary); outline: none; }
+
+        /* Footer */
+        footer { background: #000; color: var(--white); padding: 80px 5% 40px; border-top: 1px solid var(--accent); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 50px; }
+        .footer-bottom { border-top: 1px solid #222; padding-top: 30px; text-align: center; font-size: 0.8rem; opacity: 0.5; }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { padding: 10px 5%; }
+            .header-contact .phone-link { display: none; }
+            .btn { width: 100%; text-align: center; }
+            .hero-btns { flex-direction: column; }
+        }
+
+        /* Mobile Floating Call Button */
+        .mobile-call-btn {
+            position: fixed; bottom: 20px; right: 20px; z-index: 999;
+            background: var(--secondary); color: var(--primary); padding: 15px 25px;
+            border-radius: 50px; font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: none; text-transform: uppercase; font-size: 0.9rem;
+        }
+        @media (max-width: 768px) { .mobile-call-btn { display: block; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">London Elite Detailing</div>
+        <div class="header-contact">
+            <a href="tel:[PHONE NUMBER]" class="phone-link">📞 [PHONE NUMBER]</a>
+            <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Showroom Shine, Delivered <br>to Your Doorstep in London.</h1>
+        <p>London's premier mobile detailing and ceramic coating specialists. We restore your vehicle's brilliance using world-leading products and precision techniques.</p>
+        <div class="hero-btns">
+            <a href="#quote" class="btn btn-primary">Get My Bespoke Detailing Quote</a>
+            <a href="#services" class="btn btn-outline">Explore Our Packages</a>
+        </div>
+        <div class="trust-badges">
+            <span>⭐⭐⭐⭐⭐ 400+ Luxury Cars Restored</span>
+            <span>🛡️ Certified Ceramic Pro</span>
+            <span>✅ Fully Insured</span>
+        </div>
+    </section>
+
+    <!-- Proof Strip -->
+    <div class="proof-strip">
+        London's Choice for Supercars & Executive Vehicles. | 5-Star Rated on Trustpilot | 100% Satisfaction Guarantee.
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <h2 class="section-title">Precision Detailing Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Full Exterior Detail</h3>
+                <p>Multi-stage decontamination and high-grade sealant for a deep, mirror-like reflection that lasts.</p>
+            </div>
+            <div class="card">
+                <h3>Interior Deep Clean</h3>
+                <p>Advanced steam cleaning and leather conditioning to restore a factory-fresh cabin environment.</p>
+            </div>
+            <div class="card">
+                <h3>Ceramic Coating</h3>
+                <p>Ultra-hard hydrophobic protection that shields your paint from the elements and enhances gloss.</p>
+            </div>
+            <div class="card">
+                <h3>Paint Correction</h3>
+                <p>Expert machine polishing to eliminate swirls and scratches, restoring the true depth of your paint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section why-us">
+        <h2 class="section-title">The Elite Standard</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <span>📍</span>
+                <div>
+                    <strong>Mobile Convenience</strong>
+                    <p>No need to leave your home. We bring our full professional setup to you anywhere in Greater London.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <span>💎</span>
+                <div>
+                    <strong>Precision Craftsmanship</strong>
+                    <p>We treat every car as a piece of art, using surgical precision and the industry's best tools.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <span>🧪</span>
+                <div>
+                    <strong>Premium Grade Products</strong>
+                    <p>We only use professional-grade chemicals and high-GSM microfibers to ensure zero marring.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <span>💼</span>
+                <div>
+                    <strong>Discreet & Professional</strong>
+                    <p>The trusted choice for London's most discerning car collectors and executive fleets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+        <h2 class="section-title">The Road to Perfection</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-num">1</div>
+                <h3>Consultation</h3>
+                <p>Request a quote and tell us about your vehicle's current condition.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">2</div>
+                <h3>Custom Plan</h3>
+                <p>We design a bespoke package tailored to your car's specific needs.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-num">3</div>
+                <h3>The Transformation</h3>
+                <p>Our experts perform the detailing at your location to perfection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section why-us">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="grid">
+            <div class="review-card">
+                "Absolutely stunning result on my Porsche. The ceramic coating is incredible—water just beads off. Truly the best in London."
+                <span class="review-author">— [Placeholder: James W., Knightsbridge]</span>
+            </div>
+            <div class="review-card">
+                "Professional, punctual, and meticulous. My interior looks better now than the day I bought the car."
+                <span class="review-author">— [Placeholder: Sarah L., Chelsea]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Area -->
+    <section class="section" style="text-align:center;">
+        <h2 class="section-title">Covering the Capital</h2>
+        <p style="max-width:700px; margin: 0 auto 30px; color: #bbb;">From Mayfair and Kensington to Canary Wharf, Richmond, and Croydon. We bring the showroom to your doorstep anywhere in Greater London.</p>
+        <a href="#quote" class="btn btn-primary">Book Your Transformation</a>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section why-us">
+        <h2 class="section-title">Common Questions</h2>
+        <div class="faq-container">
+            <details>
+                <summary>Do you need access to water and power?</summary>
+                <p>Ideally, yes, but we carry our own professional water tanks and generators for sites without facilities.</p>
+            </details>
+            <details>
+                <summary>How long does a full detail take?</summary>
+                <p>Depending on the package and condition, a full detail typically takes 6 to 12 hours.</p>
+            </details>
+            <details>
+                <summary>What is Ceramic Coating?</summary>
+                <p>A liquid polymer that bonds with your paint to create a hard, protective layer that lasts for years.</p>
+            </details>
+            <details>
+                <summary>Are you insured for high-value vehicles?</summary>
+                <p>Yes, we carry comprehensive professional indemnity and public liability insurance.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="quote" class="section cta-final">
+        <h2 class="section-title">Give Your Car the Treatment It Deserves.</h2>
+        <p style="color: #bbb;">Limited slots available for this month. Book your transformation today.</p>
+
+        <div class="form-container">
+            <form id="leadForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="+44 000 000 0000" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Make & Model</label>
+                    <input type="text" name="vehicle" placeholder="e.g. Porsche 911" required>
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select name="service" required>
+                        <option value="">Select a service...</option>
+                        <option value="exterior">Full Exterior Detail</option>
+                        <option value="interior">Interior Deep Clean</option>
+                        <option value="ceramic">Ceramic Coating</option>
+                        <option value="correction">Paint Correction</option>
+                        <option value="full">The Elite Full Package</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Additional Notes</label>
+                    <textarea name="message" rows="4" placeholder="Any specific concerns or requests..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.1rem;">Get My Bespoke Quote Now</button>
+            </form>
+            <div id="successMsg" style="display:none; color: var(--secondary); font-weight: 700; margin-top: 20px;">
+                Thank you! Your request has been received. Our London specialist will review your vehicle details and contact you shortly.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3 style="margin-bottom:20px; color: var(--secondary);">London Elite</h3>
+                <p style="color: #bbb;">Defining the standard of automotive excellence in the heart of the UK's capital.</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom:20px; color: var(--secondary);">Contact</h3>
+                <p style="color: #bbb;">📞 [PHONE NUMBER]</p>
+                <p style="color: #bbb;">✉️ [EMAIL]</p>
+                <p style="color: #bbb;">📍 [ADDRESS], London, UK</p>
+            </div>
+            <div>
+                <h3 style="margin-bottom:20px; color: var(--secondary);">Links</h3>
+                <ul style="display:grid; gap:10px;">
+                    <li><a href="#services" style="color:#bbb">Our Packages</a></li>
+                    <li><a href="#quote" style="color:#bbb">Request Quote</a></li>
+                    <li><a href="#" style="color:#bbb">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 London Elite Detailing. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Call Button -->
+    <a href="tel:[PHONE NUMBER]" class="mobile-call-btn">📞 Call Now for a Quote</a>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
